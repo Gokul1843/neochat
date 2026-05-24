@@ -13,6 +13,9 @@ function App() {
   const [password, setPassword] = useState("");
 
   const [message, setMessage] = useState("");
+
+  const [joined, setJoined] = useState(false);
+  
   const [showEmoji, setShowEmoji] = useState(false);
 
   const [profilePhoto, setProfilePhoto] = useState(null);
