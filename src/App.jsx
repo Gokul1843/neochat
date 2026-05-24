@@ -162,12 +162,40 @@ const [selectedUser, setSelectedUser] =
               }}
             />
 
-            <div>
-              <h2>{username}</h2>
-              <p style={{ color: "green" }}>
-                Online 🟢
-              </p>
-            </div>
+            <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "15px",
+  }}
+>
+  <img
+    src={
+      selectedUser === "Aarav"
+        ? "https://randomuser.me/api/portraits/men/32.jpg"
+        : "https://randomuser.me/api/portraits/women/44.jpg"
+    }
+    alt="user"
+    style={{
+      width: "50px",
+      height: "50px",
+      borderRadius: "50%",
+    }}
+  />
+
+  <div>
+    <h2>{selectedUser}</h2>
+
+    <p
+      style={{
+        color: "lime",
+        margin: 0,
+      }}
+    >
+      online 🟢
+    </p>
+  </div>
+</div>
           </div>
 
           <div
